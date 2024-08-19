@@ -71,7 +71,7 @@
                     <thead>
                         <tr>
                             <th scope="col">id</th>
-                            <th scope="col">user</th>
+                            <th scope="col">username</th>
                             <th scope="col">address</th>
                             <th scope="col">city</th>
                             <th scope="col">state</th>
@@ -87,7 +87,7 @@
                             <?php foreach ($posts as $post) : ?>
                                 <tr class="table-light">
                                     <th scope="row"><?php echo $post->id; ?></th>
-                                    <td><?php echo $post->user; ?></td>
+                                    <td><?php echo $post->username; ?></td>
                                     <td><?php echo $post->address; ?></td>
                                     <td><?php echo $post->city; ?></td>
                                     <td><?php echo $post->state; ?></td>
@@ -127,7 +127,7 @@
                         <h6 class="card-subtitle text-muted"><?php echo $post->city; ?></h6>
                         <h6 class="card-subtitle text-muted"><?php echo $post->state; ?></h6>
                         <h6 class="card-subtitle text-muted"><?php echo $post->zipCode; ?></h6>
-                        <h6 class="card-subtitle text-muted"><?php echo $post->user; ?></h6>
+                        <h6 class="card-subtitle text-muted"><?php echo $post->username; ?></h6>
                       </div>
                       <div class="card-body">
                         <h6>number of bedrooms: <?php echo $post->bedrooms; ?></h6>

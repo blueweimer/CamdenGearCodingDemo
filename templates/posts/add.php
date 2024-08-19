@@ -17,7 +17,7 @@
         <div class="form-group">
                 <div class="col-lg-10">
                   <?php
-                  echo $this->Form->input('user', ['class'=>'form-control', 'Placeholder'=>'User']);
+                  echo $this->Form->input('username', ['class'=>'form-control', 'Placeholder'=>'Username']);
                   ?>
                 </div>
             </div>
