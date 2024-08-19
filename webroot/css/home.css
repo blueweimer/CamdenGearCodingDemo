@@ -1,0 +1,289 @@
+/* Home page styles */
+@font-face {
+    font-family: 'cakefont';
+    src: url('../font/cakedingbats-webfont.eot');
+    src: url('../font/cakedingbats-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/cakedingbats-webfont.woff2') format('woff2'),
+    url('../font/cakedingbats-webfont.woff') format('woff'),
+    url('../font/cakedingbats-webfont.ttf') format('truetype'),
+    url('../font/cakedingbats-webfont.svg#cake_dingbatsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    padding: 60px 0;
+    background-color: #343a40;
+    color: #343a40;
+}
+header {
+    margin-bottom: 60px;
+}
+img {
+    margin-bottom: 30px;
+}
+h1 {
+    font-weight: bold;
+}
+
+h6{
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0 0 30px 0;
+    padding-left: 25px;
+}
+
+.mb-4{
+    color: #F8F9FA;
+
+}
+a {
+    color: #343a40;
+    text-decoration: underline;
+}
+hr {
+    border-bottom: 1px solid #e7e7e7;
+    border-top: 0;
+    margin-bottom: 35px;
+    color: #343a40;
+}
+
+.card{
+    align-items: center;
+    width: 50vw;
+    margin-left: calc(50% - 50vw) !important;
+    position: absolute;
+}
+
+.card-two{
+    align-items: center;
+    width: 30vw !important;
+    margin-left: calc(50% - 1050px) !important;
+    position: absolute;
+}
+
+.text-center {
+    text-align: center;
+}
+.links a {
+    margin-right: 10px;
+}
+.release-name {
+    color: #D33C43;
+    font-weight: 400;
+    font-style: italic;
+}
+.bullet:before {
+    font-family: 'cakefont', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: -1px;
+}
+.success:before {
+    color: #88c671;
+    content: "\0056";
+}
+.problem:before {
+    color: #d33d44;
+    content: "\0057";
+}
+.cake-error {
+    padding: 10px;
+    margin: 10px 0;
+}
+#url-rewriting-warning {
+    display: none;
+}
+
+/* Basic styles for toggle switch */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F8F9FA;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+th{
+    color: #343a40 !important;
+}
+
+td{
+    color: #343a40 !important;
+}
+
+.card-body{
+    width: 20rem;
+    padding-left: 3.3rem;
+    padding-right: 3.3rem;
+}
+
+.individual-cards-inside{
+    width: 40rem;
+    align-contents: center;
+    text-align: center;
+}
+
+.individual-cards{
+    width: 30% !important;
+    padding: 0 0 0 0;
+    margin-left: 15rem;
+    align-self: center !important;
+    margin-bottom: 50vh !important;
+    padding-bottom: 300px !important;
+}
+
+.dark-mode{
+    margin-top: -10vh;
+    padding-top: 10vh;
+}
+
+.light-mode{
+    margin-top: -10vh;
+    padding-top: 10vh;
+}
+
+.theme-switch-wrapper{
+    padding-top: 5vh;
+    border-radius: 10px;
+}
+
+.theme-switch{
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: #89c0ae;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #89c0ae;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: #343a40;
+}
+
+/* Light and Dark mode styles */
+body.light-mode .btn-primary {
+    background-color: #89c0ae; /* Light mode primary color */
+    border: 1px solid #F8F9FA;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #343a40; /* Dark mode primary color */
+}
+
+/* Light and Dark Mode Table */
+body.light-mode .row{
+    background-color: #89c0ae;
+    padding-bottom: 50px;
+}
+
+body.dark-mode .row{
+    background-color: #343a40 !important;
+    padding-bottom: 100px;
+}
+
+/* Light and Dark Mode Background */
+body.light-mode .cont{
+    background-color: #89c0ae;
+    width: 105vw;
+    margin-left: -25% !important;
+    padding-left: 300px;
+    padding-right: 200px;
+    height: 500%;
+}
+
+body.dark-mode .cont{
+    background-color: #343a40 !important;
+    width: 105vw;
+    margin-left: -25% !important;
+    padding-left: 300px;
+    padding-right: 200px;
+    height: 500%;
+}
+
+/* Light and Dark Mode Clear */
+body.light-mode .btn-warning{
+    background-color: #89c0ae;
+    border: .075rem solid #F8F9FA;
+}
+
+body.dark-mode .btn-warning{
+    background-color: #343a40 !important;
+    border: .075rem solid #89c0ae;
+}
+
+/* Light and Dark Mode Edit */
+body.light-mode .btn-success{
+    background-color: #89c0ae;
+    border: .075rem solid #F8F9FA;
+}
+
+body.dark-mode .btn-success{
+    background-color: #343a40 !important;
+    border: .075rem solid #89c0ae;
+}
+
+/* Light and Dark Mode Delete */
+body.light-mode .btn-danger{
+    background-color: #89c0ae;
+    border: .075rem solid #F8F9FA;
+}
+
+body.dark-mode .btn-danger{
+    background-color: #343a40 !important;
+    border: .075rem solid #89c0ae;
+}
+
+/* Light and Dark Mode Titles */
+
+/* Light and Dark Mode Delete */
+body.light-mode h2{
+    color:#F8F9FA !important;
+}
+
+body.dark-mode h2{
+    color: white !important;
+}
+
+
