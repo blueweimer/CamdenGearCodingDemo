@@ -4,7 +4,7 @@
 
 2. Navigate, using the terminal, to the cakephpcrud location.
    
-3. Enter: "bin/cake install all posts"
+3. Enter: "bin/cake bake all posts"
 
 4. Do not override the prompts given to you
 
