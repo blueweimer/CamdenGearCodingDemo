@@ -1,13 +1,22 @@
-# Use the official PHP image as the base image
 FROM php:7.4-apache
 
-# Set the working directory in the container
+RUN apt-get update && apt-get install -y \
+    libfreetype6-dev \
+    libjpeg62-turbo-dev \
+    libpng-dev \
+    libzip-dev \
+    unzip
+
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg
+
+RUN docker-php-ext-install -j$(nproc) gd pdo_mysql zip
+
+COPY --from=composer /usr/bin/composer /usr/bin/composer
+
 WORKDIR /var/www/html
 
-RUN bin/cake bake all
+COPY . .
 
-RUN bin/cake bake all posts
+RUN composer install --no-scripts --no-dev --no-interaction --optimize-autoloader
 
-RUN bin/cake server
-
-RUN docker-php-ext-install gettext intl pdo_mysql
+RUN chown -R www-data:www-data /var/www/html
