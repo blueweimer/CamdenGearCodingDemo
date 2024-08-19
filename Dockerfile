@@ -10,6 +10,4 @@ RUN bin/cake bake all posts
 
 RUN bin/cake server
 
-COPY --from-composer:latest /usr/bin/composer /usr/bin/composer
-
 RUN docker-php-ext-install gettext intl pdo_mysql
