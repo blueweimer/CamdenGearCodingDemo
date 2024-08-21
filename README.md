@@ -41,6 +41,6 @@ INSERT INTO `CamdenGearDemo`.`posts` (`id`, `user`, `address`, `city`, `state`, 
 
 7. Use the following link to access the localhost application in a browser: http://localhost:8765/posts?bedrooms=&bathrooms=&zip_code=&price_range=
 
-Live Website: https://violet-lark-679795.hostingersite.com/posts 
+Live Website: http://camdengear-programmingdemo.com
 
   
