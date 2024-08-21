@@ -8,7 +8,7 @@ CREATE DATABASE CamdenGearDemo;
 
 CREATE TABLE CamdenGearDemo.posts (
     id INT AUTO_INCREMENT,
-    username VARCHAR(50) NOT NULL,
+    user VARCHAR(50) NOT NULL,
     address VARCHAR(50) NOT NULL,
     city VARCHAR(50) NOT NULL,
     state VARCHAR(50) NOT NULL,
