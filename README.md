@@ -2,16 +2,7 @@
 
 1. Decompress master file, and open in code editor of choice
 
-2. Navigate, using the terminal, to the cakephpcrud location.
-   
-3. Enter: "bin/cake bake all posts"
-
-4. Do not override the prompts given to you
-
-5. Enter: "bin/cake server" and follow the link to localhost.
-
-
-In MySQL, I created the following table which is compatable with my code:
+2. In MySQL, I created the following table which is compatable with my code:
 
 CREATE TABLE `CamdenGearDemo`.`posts` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -26,6 +17,18 @@ CREATE TABLE `CamdenGearDemo`.`posts` (
   `picture` VARCHAR(45) NULL,
   PRIMARY KEY (`id`));
 
-  You will also have to change the SQL credintials in app_local.php to successfully connect to MySQL
+
+3. Change database settings in "config/app_local.php"
+   
+4. Navigate, using the terminal, to the cakephpcrud location.
+  
+5. Enter: "bin/cake bake all posts"
+
+6. Do not override the prompts given to you
+
+7. Enter: "bin/cake server."
+
+8. Use the following link to access the localhost application in a browser: http://localhost:8765/posts?bedrooms=&bathrooms=&zip_code=&price_range=
+
 
   
