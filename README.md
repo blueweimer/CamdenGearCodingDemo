@@ -19,16 +19,14 @@ CREATE TABLE `CamdenGearDemo`.`posts` (
 
 
 3. Change database settings in "config/app_local.php"
-   
-4. Navigate, using the terminal, to the cakephpcrud location.
-  
-5. Enter: "bin/cake bake all posts"
+     
+4. Enter: "bin/cake bake all posts"
 
-6. Do not override the prompts given to you
+5. Do not override the prompts given to you
 
-7. Enter: "bin/cake server."
+6. Enter: "bin/cake server."
 
-8. Use the following link to access the localhost application in a browser: http://localhost:8765/posts?bedrooms=&bathrooms=&zip_code=&price_range=
+7. Use the following link to access the localhost application in a browser: http://localhost:8765/posts?bedrooms=&bathrooms=&zip_code=&price_range=
 
 
   
