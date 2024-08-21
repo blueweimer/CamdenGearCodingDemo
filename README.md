@@ -1,5 +1,8 @@
 # camdengeardemo
 
+# **Live Website: http://camdengear-programmingdemo.com**
+
+
 1. Decompress master file, and open in code editor of choice
 
 2. In MySQL, I created the following table which is compatable with my code:
@@ -40,7 +43,4 @@ INSERT INTO `CamdenGearDemo`.`posts` (`id`, `user`, `address`, `city`, `state`, 
 6. Enter: "bin/cake server."
 
 7. Use the following link to access the localhost application in a browser: http://localhost:8765/posts?bedrooms=&bathrooms=&zip_code=&price_range=
-
-Live Website: http://camdengear-programmingdemo.com
-
   
