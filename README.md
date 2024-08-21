@@ -3,19 +3,32 @@
 1. Decompress master file, and open in code editor of choice
 
 2. In MySQL, I created the following table which is compatable with my code:
+  
+CREATE DATABASE CamdenGearDemo;
 
-CREATE TABLE `CamdenGearDemo`.`posts` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `user` VARCHAR(45) NULL,
-  `address` VARCHAR(45) NULL,
-  `city` VARCHAR(45) NULL,
-  `state` VARCHAR(45) NULL,
-  `zipCode` INT NULL,
-  `price` DOUBLE NULL,
-  `bedrooms` DOUBLE NULL,
-  `bathrooms` DOUBLE NULL,
-  `picture` VARCHAR(45) NULL,
-  PRIMARY KEY (`id`));
+CREATE TABLE CamdenGearDemo.posts (
+    id INT AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL,
+    address VARCHAR(50) NOT NULL,
+    city VARCHAR(50) NOT NULL,
+    state VARCHAR(50) NOT NULL,
+    zipCode INT NOT NULL,
+    price DOUBLE NOT NULL,
+    bedrooms DOUBLE NOT NULL,
+    bathrooms DOUBLE NOT NULL,
+    picture VARCHAR(50) NOT NULL,
+    PRIMARY KEY(id)
+)
+
+INSERT INTO `CamdenGearDemo`.`posts` (`id`, `username`, `address`, `city`, `state`, `zipCode`, `price`, `bedrooms`, `bathrooms`, `picture`) VALUES ('1', 'Camden Gear', '1241 Fake', 'Sedalia', 'MO', '65301', '80000', '2', '1', 'https://cdn.apartmenttherapy.info/image/upload/v1556716350/stock/8ea241e96504a398f291a31939963e8ba948368c.jpg');
+
+INSERT INTO `CamdenGearDemo`.`posts` (`id`, `username`, `address`, `city`, `state`, `zipCode`, `price`, `bedrooms`, `bathrooms`, `picture`) VALUES ('2', 'Camden Gear', '121231 Fake Street', 'Hughesville', 'MO', '65334', '140000', '1', '4', 'https://inception-app-prod.s3.amazonaws.com/NmFkMjYzZDEtYzFiNi00MmRhLWI2OTMtNWNlNmMyZjdmMjEz/content/2024/01/4335cce78a03ea0a46a880f5e13c81ff4350e483.jpg');
+
+INSERT INTO `CamdenGearDemo`.`posts` (`id`, `username`, `address`, `city`, `state`, `zipCode`, `price`, `bedrooms`, `bathrooms`, `picture`) VALUES ('3', 'Camden Gear', '1141 Not Real', 'Springfield', 'MO', '23256', '150000', '2', '4', 'https://images.unsplash.com/photo-1605146769289-440113cc3d00?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D');
+
+INSERT INTO `CamdenGearDemo`.`posts` (`id`, `username`, `address`, `city`, `state`, `zipCode`, `price`, `bedrooms`, `bathrooms`, `picture`) VALUES ('4', 'Camden Gear', '141 Street', 'Springfield', 'MO', '23516', '100000', '1', '1', 'https://c0.wallpaperflare.com/preview/108/456/1011/white-and-brown-concrete-building.jpg');
+
+INSERT INTO `CamdenGearDemo`.`posts` (`id`, `username`, `address`, `city`, `state`, `zipCode`, `price`, `bedrooms`, `bathrooms`, `picture`) VALUES ('5', 'Camden Gear', '1000 Fake Street', 'Springfield', 'MO', '23556', '90000', '2', '1', 'https://c0.wallpaperflare.com/preview/108/456/1011/white-and-brown-concrete-building.jpg');
 
 
 3. Change database settings in "config/app_local.php"
